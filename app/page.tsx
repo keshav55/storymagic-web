@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import InfiniteGallery from "@/components/InfiniteGallery";
+import FeaturedStories from "@/components/FeaturedStories";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -152,6 +153,9 @@ export default function Home() {
         <p>Use mouse wheel, arrow keys, or touch to navigate</p>
         <p className="opacity-60">Auto-play resumes after 3 seconds of inactivity</p>
       </div>
+
+      {/* Featured Stories Section */}
+      <FeaturedStories />
     </main>
   );
 }
