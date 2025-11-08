@@ -3,6 +3,10 @@
 import { useState } from "react";
 import InfiniteGallery from "@/components/InfiniteGallery";
 import FeaturedStories from "@/components/FeaturedStories";
+import HowItWorks from "@/components/HowItWorks";
+import Testimonials from "@/components/Testimonials";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
@@ -156,6 +160,18 @@ export default function Home() {
 
       {/* Featured Stories Section */}
       <FeaturedStories />
+
+      {/* How It Works Section */}
+      <HowItWorks />
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* CTA Section */}
+      <CTASection />
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }
